@@ -4,7 +4,6 @@ import {
     Monitor,
     Server,
     Database,
-    Wrench,
     CheckCircle2,
     Cpu,
     Blocks
@@ -83,7 +82,7 @@ const Skills = () => {
                                     <h3 className="text-2xl font-bold text-black mb-2">{cat.title}</h3>
                                     <p className="text-sm text-gray-500 mb-6">{cat.details}</p>
                                     <div className="flex flex-wrap gap-2">
-                                        {cat.skills.map((skill, i) => (
+                                        {cat.skills.map((skill) => (
                                             <span
                                                 key={skill}
                                                 className="px-4 py-1.5 bg-gray-50 text-gray-600 text-xs font-bold rounded-full group-hover:bg-indigo-50 group-hover:text-indigo-600 transition-colors"
